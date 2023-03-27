@@ -6,12 +6,15 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.1; E6883 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36',   
     'Referer':'https://www.t00ls.com/members-profile-12894.html'
 }
+username = os.environ["USERNAME"]
+password = os.environ["PASSWORD"]
+answer = os.environ["ANSWER"]
 logindata={
-"action" :"",
-"username":"",  #填你的用户名，不要填ID
-"password":"",   #密码的MD5值
-"questionid":"", #问题编号，对照下面注释填写，若没有设置提问则此处随便填写
-"answer":""  #输入回答，若没有设置提问则此处随便填写，或不填
+"action" :"login",
+"username":username,  #填你的用户名，不要填ID
+"password":password,   #密码的MD5值
+"questionid":5, #问题编号，对照下面注释填写，若没有设置提问则此处随便填写
+"answer":answer  #输入回答，若没有设置提问则此处随便填写，或不填
 }
 # questionid
 # 1 母亲的名字
